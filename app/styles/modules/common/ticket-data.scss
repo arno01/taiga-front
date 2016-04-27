@@ -44,7 +44,7 @@
 
 .ticket-data-container {
     @extend %small;
-    @extend %normal;
+    @extend %text;
     margin-bottom: 1rem;
     .icon {
         @include svg-size(.7rem);
