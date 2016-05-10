@@ -31,7 +31,7 @@ if (argv.s) {
 }
 
 function backup() {
-    child_process.spawnSync('pg_dump', ['-c', '-d', 'taiga', '-f', 'tmp/taiga.sql'], {stdio: "inherit"});
+    child_process.spawnSync('pg_dump', ['-c', '-d', 'taiga_test', '-f', 'tmp/taiga_test.sql'], {stdio: "inherit"});
 }
 
 function launchProtractor(suit) {
@@ -45,7 +45,7 @@ function launchProtractor(suit) {
 }
 
 function restoreBackup() {
-    child_process.spawnSync('psql', ['-d', 'taiga', '-f', 'tmp/taiga.sql']);
+    child_process.spawnSync('psql', ['-d', 'taiga_test', '-f', 'tmp/taiga_test.sql']);
 }
 
 function ask() {

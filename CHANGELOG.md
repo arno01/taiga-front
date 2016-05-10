@@ -5,6 +5,7 @@
 
 ### Features
 - Show a confirmation notice when you exit edit mode by pressing ESC in the markdown inputs.
+- New admin area to edit the tag colors used in your project
 
 ### Misc
 - Lots of small and not so small bugfixes.
