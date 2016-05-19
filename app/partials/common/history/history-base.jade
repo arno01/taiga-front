@@ -25,7 +25,7 @@ section.history
     section.history-comments
         .comments-list
         div(tg-editable-wysiwyg, ng-model!="<%- ngmodel %>")
-          div(tg-check-permission!="modify_<%- type %>", tg-toggle-comment, class="add-comment")
+          div(tg-check-permission!="comment_<%- type %>", tg-toggle-comment, class="add-comment")
               textarea(ng-attr-placeholder="{{'COMMENTS.TYPE_NEW_COMMENT' | translate}}", ng-model!="<%- ngmodel %>.comment", tg-markitup="tg-markitup")
               <% if (mode !== "edit") { %>
               +wysihelp
