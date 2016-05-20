@@ -5,6 +5,7 @@
 
 ### Features
 - Show a confirmation notice when you exit edit mode by pressing ESC in the markdown inputs.
+- Attachments image slider
 
 ### Misc
 - Lots of small and not so small bugfixes.
